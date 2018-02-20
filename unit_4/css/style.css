@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	padding: 100px;
+}
+
+h1 {
+	font-family: Overpass, sans-serif;
+	font-size: 300%;
+	text-transform: uppercase;
+	letter-spacing: 3px; 
+	text-align: center;
+	margin-top: 110px;
+}
+
+a:link {
+	font: Overpass;
+	color: #000000;
+	text-decoration: none;
+	margin: 16px;
+}
+
+a:visited {
+	color: #A9A9A9;
+}
+
+nav {
+	font-family: Overpass, sans-serif;
+	font-size: 90%;
+	letter-spacing: 1px;
+	text-align: center;
+	font-transform: uppercase;
+	margin-top: 12px;
+	margin-bottom: 60px;
+}
+
+figure {
+	display: inline;
+	margin: 3px;
+}
+
+div {
+	text-align: center;
+}
+
+.cases {
+	background: url("/examples/images/Malin_thumb_color.jpg") no-repeat;
+}
+
+.cases:hover {
+    background: url("/examples/images/Malin_thumb_white.jpg") no-repeat;
+}
+
+.intro {
+	font-family: Habibi, serif;
+	color: #000000;
+	font-size: 150%;
+	line-height: 1.5em;
+	text-align: center;
+	padding-bottom: 60px;
+	margin: 0 16% 60px;
+	border-bottom: solid 2px #D0E5DD;
+}
+
+.foot {
+	color: #07778A;
+	font-family: Overpass, sans-serif;	
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	width: 12%;
+	margin: 40px auto 40px auto;
+	border: 3px solid #D8E0E5;
+}
+
+img {
+	width: 25%;
+	margin: 10px;
+	}
