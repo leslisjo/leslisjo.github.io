@@ -9,10 +9,13 @@ main {
 }
 
 h1 {
+	background-color: #FFED74;
 	font-family: Overpass, sans-serif;
+	font-size: 300%;
 	text-transform: uppercase;
 	letter-spacing: 3px; 
-	text-align: center
+	text-align: center;
+	margin-top: 110px;
 }
 
 a:link {
@@ -22,6 +25,11 @@ a:link {
 	margin: 16px;
 }
 
+a:hover {
+    color: #DF8CAB;
+    text-decoration: none;
+}	
+
 a:visited {
 	color: #A9A9A9;
 }
@@ -30,19 +38,13 @@ nav {
 	font-family: Overpass, sans-serif;
 	font-size: 90%;
 	letter-spacing: 1px;
+	display:block;
 	text-align: center;
-	font-transform: uppercase;
+	text-transform: uppercase;
 	margin-top: 12px;
 	margin-bottom: 60px;
 }
 
-.top {
-	font-size: 300%;
-	text-transform: uppercase;
-	letter-spacing: 3px; 
-	text-align: center;
-	margin-top: 110px;
-}
 .cases {
 	width: 100%;
 	max-width: 1024px;
@@ -66,16 +68,6 @@ div {
 	text-align: center;
 }
 
-#malin {
-	width: 33.33%;
-	display:block;
-	background: transparent url("images/Malin_thumb_white") no-repeat;
-}
-
-#malin:hover {
-    background: url("images/Malin_thumb_color.jpg") no-repeat;
-} 
-
 .intro {
 	font-family: Habibi, serif;
 	color: #000000;
@@ -90,7 +82,7 @@ div {
 .foot {
 	color: #07778A;
 	font-family: Overpass, sans-serif;	
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 	text-align: center;
@@ -98,8 +90,25 @@ div {
 	align-items: center;	
 	justify-content: center;
 	width: 12%;
-	margin: 40px auto 40px auto;
+	margin: 50px auto auto auto;
 	border: 3px solid #D8E0E5;
+}
+
+.malin
+	{background-image: url("images/Malin_thumb_white.jpg");
+    /*width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 2px;*/
+}
+
+	}
+.malin:hover {
+    background-image: url("images/Malin_thumb_color.jpg");
+    /*width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;*/
+	transition: .3s ease;
 }
 
 img {
