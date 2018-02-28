@@ -20,13 +20,18 @@ h1 {
 }
 
 h2 {
-	color: black;
+	color: #000;
+	float:left;
 	font-family: Overpass, sans-serif;
-	font-size: 130%;
+	font-size: 150%;
 	text-transform: uppercase;
 	letter-spacing: 2px; 
 	text-align: left;
 	margin-top: 20px;
+}
+
+h2 a:visited {
+	color: #000;
 }
 
 h3 {
@@ -78,9 +83,33 @@ nav {
 	border-bottom: solid 2px #D0E5DD;
 }
 
-
 div {
 	text-align: center;
+}
+
+.color {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.white {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+figure:hover .color {
+	opacity: 1;
+}
+
+figure:hover .white {
+	opacity: 0;
+}
+
+figure {
+	position: relative;
 }
 
 .cases {
@@ -136,24 +165,7 @@ div {
 	padding-bottom: 40px;
 }
 
-.malin
-	{background-image: url("images/Malin_thumb_white.jpg");
-    /*width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
-	padding: 2px;*/
-}
-
-	}
-.malin:hover {
-    background-image: url("images/Malin_thumb_color.jpg");
-    /*width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;*/
-	transition: .3s ease;
-}
-
 img {
 	width: 100%;
 	display:block;
-	}
+}
