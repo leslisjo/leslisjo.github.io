@@ -9,7 +9,6 @@ main {
 }
 
 h1 {
-	background-color: #FFED74;
 	color: #000000;
 	font-family: Overpass, sans-serif;
 	font-size: 300%;
@@ -21,12 +20,11 @@ h1 {
 
 h2 {
 	color: black;
-	float:left;
 	font-family: Overpass, sans-serif;
 	font-size: 150%;
 	text-transform: uppercase;
-	letter-spacing: 2px; 
-	margin-top: 20px;
+	letter-spacing: 3px;
+	margin: 20px 0 20px 0;
 }
 
 h2 a:visited {
@@ -35,7 +33,7 @@ h2 a:visited {
 
 h3 {
 	font-family: Overpass, sans-serif;
-	color: black;
+	color: #000000;
 	font-size: 140%;
 	text-align: left;
 	margin-top: 20px;
@@ -43,24 +41,7 @@ h3 {
 	padding-bottom: 8px;
 }
 
-a:link {
-	font: Overpass;
-	color: #000000;
-	text-decoration: none;
-	margin: 16px;
-}
-
-a:hover {
-    color: #DF8CAB;
-    text-decoration: none;
-}	
-
-a:visited {
-	color: #A9A9A9;
-}
-
 nav {
-	background-color: #E8C66A;
 	font-family: Overpass, sans-serif;
 	font-size: 90%;
 	letter-spacing: 1px;
@@ -71,8 +52,23 @@ nav {
 	margin-bottom: 60px;
 }
 
+a:link {
+	font: Overpass;
+	color: #000000;
+	text-decoration: none;
+	margin: 16px;
+}
+
+a:visited {
+	color: #A9A9A9;
+}
+
+a:hover {
+    color:#B393D1;
+    text-decoration: none;
+}	
+
 .intro {
-	background-color: #FFE2B8;
 	font-family: Habibi, serif;
 	color: #000000;
 	font-size: 150%;
@@ -89,7 +85,7 @@ div {
 
 .color {
 	opacity: 0;
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 }
@@ -101,30 +97,31 @@ div {
 	left: 0;
 }
 
-figure:hover .color {
-	opacity: 1;
-}
-
-figure:hover .white {
-	opacity: 0;
-}
-
 figure {
 	position: relative;
 }
 
+figure:hover .color {
+	opacity: 1;
+	position: absolute;
+}
+
+figure:hover .white {
+	opacity: 0;
+	position: relative;
+}
+
 .cases {
-	background-color: #FFE2B8;
 	width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
+	max-width: 1036px;
+	margin: auto;
 	padding: 0 10px;
 }
 
 .cases figure {
-	width: 33.33%;
+	width: 31%;
 	float: left;
-	padding: 10px;
+	margin: 10px;
 }
 
 .clearfix:after {
@@ -176,23 +173,18 @@ img {
 }
 
 #left {
-	background-color: violet;
-	border: 1px black solid;
 	padding: 20px;
 	float:left;
 	width: 48%;
 }
 
 #right {
-	background-color: pink;
-	border: 1px black solid;
 	padding: 20px;
 	float:right;
 	width: 48%;
 }
 
 .foot {
-	background-color: #FF957E;
 	font-family: Overpass, sans-serif;
 	font-weight: bold;
 	color: #07778A;
