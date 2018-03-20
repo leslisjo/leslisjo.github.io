@@ -8,7 +8,7 @@ body {
 	padding: 3%;
 }
 
-h1 {
+h1, h4 {
 	color: #000000;
 	font-family: Overpass, sans-serif;
 	font-size: 300%;
@@ -21,10 +21,10 @@ h1 {
 h2 {
 	color: black;
 	font-family: Overpass, sans-serif;
-	font-size: 150%;
+	font-size: 160%;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	margin: 2% 0 3% 0;
+	margin: .5% 0 3% 0;
 }
 
 h2 a:visited {
@@ -37,8 +37,12 @@ h3 {
 	font-size: 140%;
 	text-align: left;
 	margin-top: 2%;
-	padding-left: 2%;
+	padding-left: 1%;
 	padding-bottom: .5%;
+}
+
+h4 {
+	display:none;
 }
 
 nav {
@@ -87,7 +91,7 @@ label {
 	line-height: 1.6em;
 	text-align: center;
 	padding-bottom: 4%;
-	margin: 0 16% 4%;
+	margin: 0 13% 3%;
 	border-bottom: solid 2px #D0E5DD;
 }
 
@@ -160,9 +164,9 @@ figure:hover .white {
 	color: black;
 	text-align: left;
 	line-height: 1.4em;
-	margin-right:40px;
-	padding-left: 30px;
-	padding-bottom: 40px;
+	margin-right: 5%;
+	padding-left: 1%;
+	padding-bottom: 3%;
 }
 
 img {
@@ -257,7 +261,6 @@ img {
 @media screen and (max-width: 500px) {
 	nav {
 		display:none;
-		/*margin-bottom: 40px;*/
 	}
 
 	label {
@@ -290,4 +293,33 @@ img {
 		margin: auto;
 		width: 15%;
 	}
+
+@media screen and (max-width: 500px) {
+	h1 {
+	font-size: 210%;
+	margin-top: 7%;
+	}
+
+	.intro {
+	font-size: 120%;
+	line-height: 1.4em;
+	}
+
+@media screen and (max-width: 300px) {
+	h1 {
+	display:none;
+	}
+
+	h4 {
+	display:block;
+	font-size: 280%;
+	margin-top: 4%;
+	}
+
+	.intro {
+	font-size: 110%;
+	line-height: 1.3em;
+	}
+
+
 }
